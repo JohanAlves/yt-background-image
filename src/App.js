@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ImgHero from "./img/image.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <section className="hero" style={{ backgroundImage: `url(${ImgHero})` }}>
+      <div className="content">
+        <h1>Be Creative.</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {" "}
+          Get ready to transform your React applications into visually stunning
+          experiences.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <a href="#">Start Now</a>
+      </div>
+    </section>
   );
 }
 
